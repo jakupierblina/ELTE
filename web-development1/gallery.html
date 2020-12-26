@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <nav class="navbar navbar-default " role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" 
+          data-target="#navbar-collapse-main" >
+        <span class="sr-only">Toggle-navigation</span>
+      <span  class="icon-bar"></span>
+        <span  class="icon-bar"></span>
+          <span  class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"href="index.html"><img src="photos/logo-sample.jpg" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="history.html"> History </a></li>
+            <li> <a href="today.html"> Today </a></li>
+            <li> <a href="discover.html"> Discover </a></li>
+            <li> <a href="gallery.html"> Gallery </a></li>
+            <li> <a href="tourism.html"> Tourism</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <div class="home">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="photos/gallery/4.jpg" style="width:100%;margin-top:30px; margin-bottom: 20px; padding: 10px; height: 100% ">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="photos/gallery/20264970_1546759565387322_7987439140410976847_n.jpg" style="width:100%; margin-top: 20px; margin-bottom: 20px; padding: 10px; height: 100% ">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="photos/gallery/8.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+            
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="photos/gallery/22196512_1612461768776071_2049107714860754192_n.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+         
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5/ 10</div>
+            <img src="photos/gallery/fauna5.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="photos/gallery/party.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="photos/gallery/6.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="photos/gallery/10.jpg" style="width:100%; margin-top:  30px; margin-bottom: 30px; padding: 10px; height:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="photos/gallery/3.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="photos/gallery/2.jpg" style="width:100%; margin-top:  20px; margin-bottom: 30px; padding: 10px; height:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+             
+          </div>
+          <br><br>
+          <div class="media">
+          <video id="video1">  
+        <source src="videos/tourism.mp4"alt="videos/visit.mp4" type="video/mp4" class="media-object"> </video>
+          <button style="background-color: rgb(6, 44, 77); color: #fff;" onclick="playPause()">Play/Pause</button> 
+      </div>
+    </div>
+   
+<script src="javascript/video.js"></script>
+<script src="javascript/gallery.js"></script>
+
+</body>
+</html>

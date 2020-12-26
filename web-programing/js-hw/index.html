@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Set Game</title>
+	  <link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id ="context" >
+	<h1>Welcome to Set Game</h1>
+	    <h2> Formal rules are in the atached link </h2>
+	  	<div class="rules"> 
+        <a  href="https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf">
+	  					Game rules</a> <br>
+  			<a  href="https://www.masterbaboon.com/wp-content/uploads/2010/09/sets_examples1-1024x586.png">
+  					Correct incorrect Set</a> <br>
+        <a  href="https://en.wikipedia.org/wiki/Set_(card_game)"> History of the game</a>
+      </div>
+	 
+	<h2> If you are ready to play the game please chose:  </h2>
+	<div class="givenoptions" style="list-style-type:none; ">
+  	<label id="label" for="level">Choose level:</label>
+				<select id="optionlevel">
+  					<option  id="starter" value="Starter">Starter</option>
+  					<option  id="advanced" value="Advanced">Advanced</option>
+				</select> <br>
+    <label id="label" for="players">Set the number (and names) of players</label>
+				<select name="players" id="optionplayers">
+  					<option value="1">1</option>
+  					<option value="2">2</option>
+  					<option value="3">3</option>
+  					<option value="4">4</option>
+  					<option value="5">5</option>
+  					<option value="6">6</option>
+  					<option value="7">7</option>
+  					<option value="8">8</option>
+  					<option value="9">9</option>
+  					<option value="10">10</option>
+				</select>
+        <div id="givename">
+          <form > 
+				  Name*:<input type="text" id="playersname" required > <br> 
+            <input type="submit" id="submitname" onclick="submitname()" required>
+        </form>
+      </div> 
+			<label id="label" for="mode">Set game mode</label>
+				<select name="mode" id="optionmode">
+  					<option value="Practice">Practice</option>
+  					<option value="Competitive">Competitive</option>
+				</select> <br>
+	
+			<form  method="get">
+  				<label id="label" for="browser">Choose miscellaneous </label>		
+			</form> <br>
+	</div>
+	<button id="submit" onclick="show()" > Start </button>
+</div>
+		<p></p>
+	<div id="gamedesk">
+       <div class="row">
+              <div class="left column">
+                 <h1 id="h1"> Game Desk  </h1>
+                 <h2 id="list" > List of players</h2> 
+                 <ol id="result"> <li> DefaultPlayer</li> </ol>
+                 <div class="buttons">
+                   <button  id="found" onclick="starttime()">Start Time</button> <br>
+                   <button  onclick="isthereaSet()"> Is there a set? </button> <br>
+                  <button  id="showme" onclick="showmeaset()" >Show me a set</button> <br>
+                 
+                  <button id="threemorecard" onclick="plusthreecards()">+3 cards</button> <br>
+                  <button onclick="starover()"> Start over</button><br>
+                   <div class="statuskoh">
+                      <span> Game status: </span>
+                       <p id="score">  </p>
+                    <div id="deck">
+                        <p id="levelcount"></p>
+                        <p id="deckCount"></p>
+                    </div>
+
+                    <h2 id="setStatus"></h2>
+                     
+                      <h4 id="reasons"></h4>
+                     <h2 id="notification"> </h2> 
+                 
+                   </div>
+                  </div>
+                  
+              </div>
+
+        <div class="center column">
+                <div class="topleft">
+                  <h1>Time:  </h1>
+                  <h1 id="timer">10 </h1>                 
+                 
+                </div>           
+          
+    
+             <table id="cardsOnTable">
+                    <tr id="r0">
+                        <td id="cell0" onclick="selectCard(this, 0)"></td>
+                        <td id="cell1" onclick="selectCard(this, 1)"></td>
+                        <td id="cell2" onclick="selectCard(this, 2)"></td>
+                    </tr>
+                    <tr id="r1">
+                        <td id="cell3" onclick="selectCard(this, 3)"></td>
+                        <td id="cell4" onclick="selectCard(this, 4)"></td>
+                        <td id="cell5" onclick="selectCard(this, 5)"></td>
+                    </tr>
+                    <tr id="r2">
+                        <td id="cell6" onclick="selectCard(this, 6)"></td>
+                        <td id="cell7" onclick="selectCard(this, 7)"></td>
+                        <td id="cell8" onclick="selectCard(this, 8)"></td>
+                    </tr>
+                    <tr id="r3">
+                        <td id="cell9" onclick="selectCard(this, 9)"></td>
+                        <td id="cell10" onclick="selectCard(this, 10)"></td>
+                        <td id="cell11" onclick="selectCard(this, 11)"></td>
+                    </tr>
+                    <tr id="plus3"> 
+                      <td id="cell12" onclick="selectCard(this, 12)"></td>
+                      <td id="cell13" onclick="selectCard(this, 13)"></td>
+                      <td id="cell14" onclick="selectCard(this, 14)"></td>
+                    </tr>
+
+                </table>
+                  <div class="topright">
+                 
+                </div>
+              </div>
+
+              </div>
+        </div>
+  
+
+<script src="set-logic.js"></script>
+</body>
+</html>

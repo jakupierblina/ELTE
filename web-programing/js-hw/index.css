@@ -1,0 +1,189 @@
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+  margin: 10px;
+  background-color: #D8BFD8;
+  height: 50px;
+  width: 100%;
+}
+h2{
+     text-align: justify;
+   letter-spacing: 3px;
+}
+a {
+  margin: 10px;
+}
+.rules{
+   font-size: 25px;
+   letter-spacing: 3px;
+   padding: 10px;
+   margin: 15px;   
+
+}
+.givenoptions{
+   font-size: 25px;
+   padding: 10px;
+}
+#label{
+  margin: 10px;
+
+}
+select{
+  margin:10px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+   background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  cursor: pointer;
+} 
+.header{
+  width: 100%;
+  height: 300px
+}
+#context{
+  display: block;
+     border-bottom: 2px solid purple;
+
+}
+#gamedesk {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #D8BFD8;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 15px;
+}
+
+td {
+    background-color: white;
+    border: 5px solid #bfbfbf;
+}
+
+td {
+    height: 80px;
+    width: 135px;
+    vertical-align: center;
+    text-align: center;
+}
+
+ul {
+    color: purple;
+    display: table;
+    margin: 0 auto;
+}
+.buttons{
+  margin-top:20px;
+  padding: 10px;
+}
+.statuskoh{
+  margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 850px;
+}
+
+.column {
+    padding: 10px;
+}
+
+.left {
+    flex:  25%;
+}
+
+.center {
+    flex: 50%;
+}
+
+.right {
+    flex: 25%;
+    visibility: hidden;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.topright {
+    flex: 40%;
+    text-align: center;
+}
+
+.topleft {
+    flex: 60%;
+    text-align: center;
+}
+
+#notification {
+    color: #bfbfbf;
+}
+
+#deckCount {
+    padding: 0;
+    margin: 0;
+}
+
+#timer {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+#r4 {
+    visibility: hidden;
+}
+
+span{
+  font-size: 25px;
+  color: black;
+}
+
+
+select, option {
+font-size: 20px;
+width: 10%;
+background-color: white;
+}
+
+#givename {
+  font-size: 25px;
+  margin: 10px;
+}
+input{
+  font-size: 20px;
+}
+.ask{
+  margin-top: 50px;
+  width: 100%;
+}
+
+#plus3{
+  visibility: hidden;
+}

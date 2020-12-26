@@ -1,0 +1,6 @@
+52,flixb,2018,gas,000,2522
+35,mercebus,2008,diesel,500,2322
+45,buss,2015,hybrid,6555,2522
+22,bmwbus,2000,diesel,6455,2322
+16,bbus,2008,gas,645,222
+65,flixbus,2015,gas,880,4575

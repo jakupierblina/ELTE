@@ -1,0 +1,10 @@
+IDEA OF THE GAME
+-you need to create a frame with size (3x3),(5x5),(7x7)
+-have two players with two colors red and blue
+
+LOGIC
+-each neighbour boxes are inicriead by one from theif selected neighbour
+-count each steps for players
+-winner is known when:
+	which color is dominant in the table
+-when select a winner show how many steps did he make to win
