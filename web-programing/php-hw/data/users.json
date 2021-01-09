@@ -1,0 +1,38 @@
+{
+    "5fedc155040fe": {
+        "username": "test2@163.com",
+        "password": "$2y$10$fKOZFw76MK63u2eVCQu4EecVV1.khZg4z5SN7nblp6ZMRgNMyuEdC",
+        "fullname": "test2",
+        "roles": [
+            "user"
+        ],
+        "address": "test2Address",
+        "SSN": "111111111",
+        "taken": 0,
+        "id": "5fedc155040fe"
+    },
+    "5fedc1eca8750": {
+        "username": "test1@163.com",
+        "password": "$2y$10$lTk7liAGSKkAfSAT\/Hw5HOaWC.wlDdVsMRPexxK3iwfLqtsaoIssO",
+        "fullname": "test1",
+        "roles": [
+            "user"
+        ],
+        "address": "test1Address",
+        "SSN": "123456789",
+        "taken": 1,
+        "id": "5fedc1eca8750"
+    },
+    "5fef35fceeb0c": {
+        "username": "tutu990329@gmail.com",
+        "password": "$2y$10$cMuygYNA4\/WYjxsMRPoErefEbNwSIclSzPW1GGCLKDblYtS6NRDPW",
+        "fullname": "Charlie",
+        "roles": [
+            "user"
+        ],
+        "address": "Admin",
+        "SSN": "123456789",
+        "taken": 1,
+        "id": "5fef35fceeb0c"
+    }
+}
