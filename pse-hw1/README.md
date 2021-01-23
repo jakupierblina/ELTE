@@ -6,4 +6,4 @@ Java
 
 
 
-<img sc="output.png">
+<img src="output.png">
