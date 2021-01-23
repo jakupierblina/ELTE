@@ -2,7 +2,7 @@ Set Card Game
 
 
 
-<img src="Screenshot 2021-01-23 211025.png">
+<img src="Screenshot 2021-01-23 211010.png">
 
 <img src="Screenshot 2021-01-23 211025.png">
 
