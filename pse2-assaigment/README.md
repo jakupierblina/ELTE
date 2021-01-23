@@ -58,3 +58,7 @@ Machine Gunners: Machine gunners attack enemy troops and buildings.
 RPG Soldiers: RPG Soldiers also attack  enemy troops and buildings but they have more damage than machine gunners.
 
 
+
+<img src="cnc-defend.png">
+
+
