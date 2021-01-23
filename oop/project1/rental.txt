@@ -1,0 +1,8 @@
+5,15,caraudi
+1,30,carmercedez
+3,25,busflix
+2,6,busposki
+8,18,carbmw
+6,17,busflix
+9,23,carbuggati
+12,25,buspolski

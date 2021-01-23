@@ -1,0 +1,6 @@
+audi,2018,gas,000,2522
+mercedez,2008,diesel,500,2322
+buggati,2015,hybrid,6555,2522
+bmw,2000,diesel,6455,2322
+cbuggati,2005,hybrid,6555,2522
+cbmw,2000,diesel,645,2324

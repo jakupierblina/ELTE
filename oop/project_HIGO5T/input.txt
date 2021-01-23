@@ -1,0 +1,4 @@
+Stainislaw Lem;23;junior;200000
+Terry Prattchet;34;senior;1000000
+Neil Gaiman;42;senior;500000
+Durrenmatt;46;junior;450000

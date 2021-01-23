@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1526807267 source:c:\users\jakup\onedrive\desktop\programming\oop-project\project1\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"solution.h"
+
+1526755078 source:c:\users\jakup\onedrive\desktop\programming\oop-project\project1\class.cpp
+	"rental.h"
+	"bus.h"
+	"car.h"
+	<iostream>
+
+1526728655 c:\users\jakup\onedrive\desktop\programming\oop-project\project1\car.h
+	<iostream>
+
+1526755018 c:\users\jakup\onedrive\desktop\programming\oop-project\project1\rental.h
+	"bus.h"
+	"car.h"
+	<iostream>
+
+1526728602 c:\users\jakup\onedrive\desktop\programming\oop-project\project1\bus.h
+	"car.h"
+	<iostream>
+
+1526122227 source:c:\users\jakup\onedrive\desktop\programming\oop-project\project1\input.cpp
+	<iostream>
+	<sstream>
+	<vector>
+	<iostream>
+	<fstream>
+	<sstream>
+	"solution.h"
+
+1526753669 c:\users\jakup\onedrive\desktop\programming\oop-project\project1\solution.h
+	"car.h"
+	"bus.h"
+	"rental.h"
+	<vector>
+	<cstdlib>
+
+1526122673 c:\users\jakup\onedrive\desktop\programming\oop-project\project1\input.h
+	"car.h"
+	"bus.h"
+	"rental.h"
+	<string>
+	<vector>
+	<iostream>
+
+1526807004 source:c:\users\jakup\onedrive\desktop\programming\oop-project\project1\solution.cpp
+	"solution.h"
+	<vector>
+	<fstream>
+	<cstdlib>
+

@@ -1,0 +1,6 @@
+
+task A solution: Terry Prattchet 
+task B solution (1 means yes/ 0 means no ~):  0
+taskc C solution: 2
+0x6ffcb0 
+0x6ffcb0 

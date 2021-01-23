@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1521992416 source:c:\users\jakup\onedrive\desktop\programming\project_higo5t\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	<string>
+	"company.h"
+
+1521987995 c:\users\jakup\onedrive\desktop\programming\project_higo5t\company.h
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	<string>
+
+1521992690 source:c:\users\jakup\onedrive\desktop\programming\project_higo5t\company.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<stdlib.h>
+	<cstdlib>
+	"company.h"
+
+1522403471 source:c:\users\jakup\downloads\project_higo5t\project_higo5t\company.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	<stdlib.h>
+	<cstdlib>
+	"company.h"
+
+1522403097 c:\users\jakup\downloads\project_higo5t\project_higo5t\company.h
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	<string>
+
+1522403097 source:c:\users\jakup\downloads\project_higo5t\project_higo5t\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	<string>
+	"company.h"
+
