@@ -1,55 +1,85 @@
-<Erblina Jakupi>
-<HIGO5T>
-Web-programming - JavaScript home assignment
-This solution was submitted by the stundent named above for a Web-programming assignment.
+Set Card Game
 
-Hereby I declare that the solution is my own work. I did not copy or use solutions from a third party. I did not share this solution with fellow students and I did not publish it. 
 
-According to the Academic Regulations for Students (Eötvös Loránd University Organisational and Operational Regulations – Volume 2, Section 74/C), a student purpoting the intellectual property of others as their own [...] is committing a disciplinary offence.
 
-The worst result of a disciplinary offence can be the expulsion of the student.
+<img src="Screenshot 2021-01-23 211025.png">
 
-### Minimum requirements (6 points)
-- [x] The `README.md` file from the *Other requerements* section is filled with your data and included with your solution (0&nbsp;points)
-- [x] The game page is displayed (0&nbsp;points)
-- [x] A deck of 27 cards consists of cards using a permutation of the three card properties, the deck is printed onto the console (1&nbsp;points)
-- [x] The first deal of 12 cards is displayed,in a 3×4 arrangement (1&nbsp;point)
-- [x] Three cards can be selected (1&nbsp;point)
-- [x] After selecting three cards, the program decides if the SET is correct or not (1&nbsp;point)
-- [x] After a correct SET, the three cards are discarded and three new cards are drawn (1&nbsp;points)
-- [x] The game repeats until the deck runs out (0.5&nbsp;points)
-- [x] If there is no SET on the table, the game ends. (0.5&nbsp;points)
+<img src="Screenshot 2021-01-23 211025.png">
 
-### Further points
-#### Base tasks (14 points)
-- [x] The rules are accessible from the starting page (0.5&nbsp;points)
-- [x] The options are displayed on the starting page (0.5&nbsp;points)
-- [x] The name pf the players can be set, the number of fields matches the number of players, there is a default name for each player (0.5&nbsp;points)
-- [ ] The player who is declaring a SET can be selected (1&nbsp;point)
-- [ ] If playing a one-player game, the player is always selected (1&nbsp;point)
-- [x] When declaring a SET, a selected card can be unselected (1&nbsp;point)
-- [x] The timer of 10 seconds (during a player declaring a SET) works (1&nbsp;point)
-- [x] Declaring a correct SET gives the player a point (0.5&nbsp;points) 
-- [x] Declaring an incorrect SET subtracts a point from the player (0.5&nbsp;points)
-- [ ] The selection of players is working properly (e.g. after declaring, the selection gets reset, a player declaring an incorrect SET is disabled unil next turn) (1&nbsp;point)
-- [x] The *Is there a SET?* button displays according to the settings and works properly (1&nbsp;point)
-- [x] The *Show me a SET* button displays according to the settings and works properly (0.5&nbsp;points)
-- [~x] The *Plus three cards* button displays according to the settings and works properly (1&nbsp;points)
-		(the table adds one more row correctly but i dont understand why the image is now shown properly)
-- [ ] Drawing *Plus three cards* automatically when there's no SET works (1&nbsp;point)
-- [x] The scores are displayed during and after a game 
-- [x] No major errors, no way to cause weird bugs (0.5&nbsp;points)
-- [x] Nice, well-designed interaface (1&nbsp;point)
-- [ ] **Missing the deadline by a week (-3&nbsp;points)**
-- [ ] **Missing the deadline by two weeks (-6&nbsp;points)**
-- [ ] **Missing the deadline by more than two weeks (rejected&nbsp;assignment&nbsp;and&nbsp;no&nbsp;grade)**
+The goal of the game is to find SETs of three cards from the twelve cards placed on the desk. All cards have four properties:
 
-#### Bonus tasks (5 extra points)
-- [x] The difficulty can be selected (3 or 4 properties, 27 or 81 cards) (0.5&nbsp;points)
-- [ ] The 4-property mode is playable (1&nbsp;point)
-- [ ] The scores are saved locally (0.5&nbsp;points)
-- [ ] The settings page displays the one-player three-property toplist (0.5&nbsp;points)
-- [ ] The settings page displays the one-player four-property toplist (0.5&nbsp;points)
-- [ ] The settings page displays the results of the last 10 multiplayer games (0.5&nbsp;points)
-- [ ] Rematch with the current players (1&nbsp;point)
-- [ ] Current and total scores displayed during and after the game (0.5&nbsp;points)
+- **SHAPE**: oval, squiggle, diamond
+- **COLOR**: red, green, purlple
+- **NUMBER**: 1,2, or 3 shapes
+- **SHADING**: solid, striped or outlined shapes (only used in the subtasks for bonus points)
+
+Every SET consists of three cards, where all properties are:
+
+- the same on all of the cards
+- different on all of the cards.
+
+The selected cards have to adhere to these rules for ALL properties. Worded differently: if the three cards  have the same number of shapes, or 1 2 and 3; if the color is the same,  or all three colors; if all shapes are solid, or one solid, striped and  empty, etc...
+
+[Correct and incorrect SETs (Linkek egy külső oldalra)](https://www.masterbaboon.com/wp-content/uploads/2010/09/sets_examples1-1024x586.png)
+
+[Game rules (Linkek egy külső oldalra)](https://www.setgame.com/sites/default/files/instructions/SET INSTRUCTIONS - ENGLISH.pdf)
+
+## The game
+
+The game has two user interfaces:
+
+- The *starting page*, which displays first, and where the settings can be found
+- The *game page*, where the game can be played.
+
+We call these "pages", but you don't have to make two separate HTML pages. Moreso, it is a requirement to  implement the game as a single-page application, and make the switch  between the interfaces in some way (e.g. toggling the `hidden` property of two `div`s.)
+
+### Starting page
+
+On the game's starting page, show:
+
+- The name of the game
+- The rules of the game (As text, as a link, as a dropdown, etc.)
+- An option to set the number (and names) of players
+- An option to set the game mode
+- And other, miscellaneous options.
+
+By default, the *Advanced* difficulty should be selected.
+
+The **number of players** can be set from 1 to 10, the default is 1. Display changeable names for the selected number of players! The default names should be *Player1*, *Player2*, ..., *PlayerN*.
+
+There are two **game modes**:
+
+- *Practice*: All options are available, and in a one-player game, there is no timer.
+- *Competitive*: The miscellaneous options aren't available, and the one-player game has the timer enabled as well.
+
+The **miscellaneous** options:
+
+- Enable or disable a button which tells if there is a SET in the current deal (*Competitive*: disabled)
+- Enable or disable a button which shows a SET (*Competitive*: disabled)
+- Automatic or button-based deal method for three new cards after no SET was discovered (*Competitive*: automatic)
+
+Pressing a button labeled **Start** starts the game.
+
+### The game page
+
+- We play the game with three properties: SHAPE, COLOR, NUMBER. The SHADING of the shapes is solid, thus we have 3×3×3=27 cards.
+- At the start of the game, generate the deck and shuffle it, then print it on the console.
+- Following that, display 12 cards (preferably in a 3×4 layout)
+- The players in front of the computer examine the table, and if someone finds a SET, they can declare it:
+  1. The player tells the computer it's  their action (clicking on their name on the interface, or pressing an  assigned button on the keyboard)
+  2. A timer of 10 seconds starts. If  the timer expires before the player makes a selection, the game  considers the player made a wrong selection. Displaying the time is  optional: you can show a countdown, or simply notify the player if time  is up.
+  3. While declaring a SET, clicking on a card should select it. Clicking on an already selected card should  remove the selection. Any number of cards can be selected or deselected  until the player selects their third card, when the game switches to  evaluation.
+- If the player made a wrong  selection, they lose a point, and the other players can try finding a  set. The original player can't make a new action until someone discovers a SET or all players fail the turn. If all players fail during a turn,  everybody gets re-enabled.
+- If the player made a correct  selection, the three selected cards disappear from the table and the  player gets a point. All players who made a wrong selection this turn  are re-enabled, and the table draws three new cards.
+- Dealing new cards onto the table  works while there is at least one card in the deck. Display the number  of remaining cards in the deck!
+- If there are no more cards in the  deck and the table has no valid SET, the game ends. The program should  check for this automatically.
+- If all players fail to find a SET, three new cards are dealt (automatically or by button, based on the option). If they find a SET in the expanded table, the extra cards are discarded for the next turn. **After a set is found on the expanded table the players continue the game with the cards remaining on the table.**
+- Two types of hints are available (if enabled in the settings):
+  - Asking the program if there is a valid SET on the current table
+  - Asking the program to show a valid SET
+- If there's only one player, measure the time since the start of the game. In this case, the player is  automatically selected (no need to tell the computer whose action is  happening).
+- At the end of the game, the game  should display who is the first, second, etc. player. A button should  redirect the player to the settings.
+- When there is only one player, three things change:
+  - The game should keep track of the  time passed since the start of the game and show how long the player  took to finish (you can display this as a timer during the game as well)
+  - The player is automatically selected when declaring a SET (no need to tell the game who is taking an action)
+  - There is no 10s time limit for SET selection.
