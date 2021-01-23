@@ -1,0 +1,60 @@
+.home{
+    margin-top: 50px;
+    width: 100%;
+}
+.navbar-brand img{
+    height: 90px;
+    width: 120px;
+    margin-left: 35px;
+}
+.imgt img {
+    position: relative;
+    float: left top;
+    width: 100px;
+    height: 110px;;
+    margin-left: 20px
+
+}
+.intro{
+    padding: 20px;
+    background-color: rgb(223, 223, 235);
+    border: 2px solid rgb(228, 228, 235);
+    margin: 10px;
+}
+h3{
+    text-shadow: 2px  rgb(4, 56, 102);
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+.img-info img{
+    float: right;
+    height: 380px;
+     width: 350px;
+    padding: 10px;
+}
+.introduction-p {
+    font-size: 20px;
+    padding:5px;
+   margin-top: 10px;  
+}
+
+/** **/
+.container{
+    padding:10px;
+    margin: 10px;
+}
+.container img{
+    width: 450px;
+}
+ p{
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    height: 100%;
+    color: #000;
+}
+.media{
+    margin: 10px;
+}

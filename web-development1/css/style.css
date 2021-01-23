@@ -1,0 +1,42 @@
+html.body{
+	height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+}
+
+.navbar{
+	padding: 1% ;
+    font-size: 1.2em;
+    border-bottom: 2px rgb(4, 56, 102);
+    background-color: white;
+    margin-top: 15px;
+    padding-right: 25px;
+    width: 100%;
+}
+/**logo edit */
+.navbar-brand{
+    padding: 0 15px 5px;
+}
+.navbar-brand img{
+    height: 90px;
+    width: 120px;
+    margin-left: 35px;
+}
+/* links in navbar*/
+.navbar-default .navbar-nav li a{
+	color: rgb(238, 238, 238);
+    margin-right: 50px;
+    margin-left: 20px;
+    font-variant:small-caps;
+    white-space: nowrap;
+
+}
+.navbar-default .navbar-nav li{ 
+    margin-top: 15px;
+    background-color: rgb(6, 44, 77);   
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a:active {
+    color: rgb(0, 0, 0,0.667);
+    background-color: #fff;
+}
